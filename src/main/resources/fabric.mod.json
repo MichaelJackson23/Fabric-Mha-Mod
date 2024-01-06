@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mineademia",
+	"version": "${version}",
+	"name": "mineademia",
+	"description": "This mod adds quirks from the anime My Hero Academia",
+	"authors": [
+		"MichaelJackson23"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mineademia/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.michaeljackson23.mineademia.Mineademia"
+		],
+		"client": [
+			"net.michaeljackson23.mineademia.MineademiaClient"
+		],
+		"fabric-datagen": [
+			"net.michaeljackson23.mineademia.MineademiaDataGenerator"
+		]
+	},
+	"mixins": [
+		"mineademia.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

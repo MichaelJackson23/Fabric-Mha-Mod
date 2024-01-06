@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.michaeljackson23.mineademia.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
